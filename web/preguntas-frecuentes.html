@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <title>Codex Fiscal</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="dist/css/app.css" as="style" onload="this.rel='stylesheet'">
+   <link rel="preload" href="dist/css/app.css" as="style" onload="this.rel='stylesheet'">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <noscript>
+      <link rel="stylesheet" href="dist/css/app.css">
+   </noscript>
+
+</head>
+
+<body 
+   x-data="app()"
+   x-init="viewportHeight()" style="background: #F9F9F9;">
+
+   <nav class="mkp-main-menu flex items-center justify-between flex-wrap p-6" x-data="{ isOpen: false }"
+   @keydown.escape="isOpen = false"">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+         <div class="mkp-img-container">
+            <img class="lg:hidden"  src="dist/images/codex_logo.png" alt="">
+         </div>
+      </div>
+      <div class="block lg:hidden">
+         <button
+        @click="isOpen = !isOpen"
+        type="button"
+        class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white px-3 py-2 border rounded text-white bg-primary-100 hover:text-blue-100 hover:border-blue-700"
+        :class="{ 'transition transform-180': isOpen }"
+      >
+        <svg
+          class="h-6 w-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            x-show="isOpen"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          />
+          <path
+            x-show="!isOpen"
+            fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          />
+        </svg>
+      </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:text-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
+      @click.away="isOpen = false"
+      x-show.transition="true">
+        <div class="text-sm lg:flex-grow">
+          <a href="/quienes-somos.html" class="block mt-4 lg:inline-block lg:mt-0 lg:text-teal-200 lg:hover:text-white hover:text-blue-700 mr-4">
+            Quienes Somos
+          </a>
+          <a href="/contacto.html" class="block mt-4 lg:inline-block lg:mt-0 lg:text-teal-200 lg:hover:text-white hover:text-blue-700 mr-4">
+            Contacto
+          </a>
+          <a href="/preguntas-frecuentes.html" class="block mt-4 lg:inline-block lg:mt-0 lg:text-teal-200 lg:hover:text-white hover:text-blue-700 mr-4">
+            Preguntas Frecuentes
+          </a>
+          <a href="/aviso-de-privacidad.html" class="block mt-4 lg:inline-block lg:mt-0 lg:text-teal-200 lg:hover:text-white hover:text-blue-700">
+            Aviso de Privacidad
+          </a>
+        </div>
+        <div>
+          <a style="background: #024E8F;
+          color: white;
+          padding: 10px 30px;
+          border-radius: 35px;
+          font-weight: 700;" href="/registro.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 lg:hidden">ACCESO A CLIENTES</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-cover bg-center bg-no-repeat" style="background-image: url(dist/images/hero-Bg.png);">
+      <div class="container mt-0">
+         <nav class="p-5 justify-between items-center lg:flex hidden">
+            <div class="imagen w-4/12"><a href="/"><img  src="dist/images/codex_logo.png" alt=""></a></div>
+            <div class="button flex items-center">
+               <a href="registro.html"><button style="background: #024E8F;
+                  color: white;
+                  padding: 10px 30px;
+                  border-radius: 35px;
+                  font-weight: 700;">ACCESO A CLIENTES</button></a>
+            </div>
+            
+         </nav>
+         <div class="mkp-container-titulo-h1 md:pt-5 md:pb-20 py-40">
+             <h1 class="text-4xl font-bold text-primary-300 text-center">Preguntas Frecuentes</h1>
+            <h2 class="text-center text-lg text-primary-300"> <a href="/">Inicio</a> > Preguntas Frecuentes</h2>
+         </div>
+
+      </div> 
+    </section>
+
+    <section class="my-10">
+       <div class="container">
+        <div class="container-titulo my-10 pt-10">
+            <div class="container__titulo">
+                <!-- <h2 class="pb-8 leading-8 text-3xl text-primary-100 font-bold text-center" style="color: #6EC1E4;">AVISO DE PRIVACIDAD</h2> -->
+            </div>
+           <!-- <div class="container-titulo__subtitulo text-primary-300">
+               <p>Lorem fistrum por la gloria de mi madre esse jarl aliqua llevame al sircoo. De la pradera ullamco qué dise usteer está la cosa muy malar.</p>
+           </div> -->
+        </div>
+        <!-- <div class="container-img"><img class="m-auto" src="dist/images/codex_logo.png" alt=""></div> -->
+         
+
+         <div class="container-aviso pb-32">
+            <div class="text-primary-300 mkp-faqs"><h3>¿Cada cuanto tiempo se presentan las declaraciones fiscales?</h3><div> </div><p>Las declaraciones de IRPF e IVA se presentan trimestralmente. Además con carácter anual se presentan los resúmenes de IRPF, IVA y el Impuesto sobre Sociedades. Una asesoría fiscal se ocupa de preparar las liquidaciones , anticiparle el resultado de las mismas y en su caso presentarlas en Hacienda.</p><p> </p><h3>¿Qué impuestos tiene que pagar una Sociedad?</h3><div> </div><p>Debe ingresar las cantidades retenidas ya sea a sus trabajadores, o a los profesionales con los que colabore. También debe ingresar las retenciones por alquiler o rendimientos del capital mobiliario que haya pagado, en su caso. También hay que pagar el importe que resulte de restar el IVA soportado,  el IVA que haya repercutido.  En función de la marcha del negocio y si ha obtenido beneficios deberá pagar en concepto de Impuesto sobre Sociedades, cantidades que oscilan entre el 20% y el 30%, dependiendo de diferentes factores.</p><p> </p><h3>¿Quién entrega los documentos?</h3><div> </div><p>La asesoría fiscal se ocupa de presentar todas las declaraciones fiscales ya sean positivas, negativas o sin actividad. Todo ello ya sea con certificado digital como colaborador social o con el del propio cliente o mediante apoderamiento.</p><p> </p><h3>¿Es posible aplazar y fraccionar los pagos?</h3><div> </div><p>Sí, la asesoría se ocupa de preparar la solicitud de aplazamiento teniendo en cuenta la tesorería y las posibilidades de pago. La necesidad o no de garantías viene marcada por el importe a aplazar siendo necesarias cuando la cantidad aplazada supere los 6.000 euros.</p><p> </p><h3>¿Qué requisitos deben tener las facturas que emito y las que recibo para que sean válidas a efectos contables y fiscales?</h3><div> </div><p>Las<a href="https://www.pymesyautonomos.com/fiscalidad-y-contabilidad/los-datos-que-deben-contener-las-facturas" target="_blank" rel="noopener"> facturas recibidas deben cumplir que la facture esté numerada</a> y poner los datos de quien la emite (Nombre, dirección y CIF) y los datos de quién la recibe (Nombre empresa , dirección y CIF) y aparecer desglosado el IVA. Hay muchos proveedores que si no dices nada te dan un albarán o una nota que no tiene efecto de factura. Para que sea deducible en Sociedades bastaría en principio con que vinieran los datos completos de quién la emite, por ejemplo gasolina, restaurante, pero siendo lo más correcto que aparezcan detalladas como te he puesto en el párrafo anterior.</p></div>
+				</div>
+         </div>
+       </div>
+    </section>
+
+
+   <footer class="bg-white">
+      <div class="container">
+
+         <div class="footer__main">
+            <div class="footer__main__container md:flex items-center">
+               <div class="footer-col1 my-10 md:w-1/2">
+                  <div class="container-img md:max-w-sm"><img src="dist/images/codex_logo.png" alt=""></div>
+                  <div class="container-text"><p>
+                     Somos un Despacho Contable formado por profesionistas con años de experiencia en el área de la Contaduría, Consultoría, Auditoría y Asesoría Fiscal.
+                  </p></div>
+               </div>
+               <div class="footer-col2 my-10 md:w-1/2">
+                  <div class="col2-container-img">
+                     <img src="https://www.studiotres.mx/pruebas/wp-content/uploads/2020/10/trabajemos.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>   
+   </footer>
+   <div class="footer__copyright p-6" style="background: #004F8E;">
+      <p class="text-center text-white">Copyright © 2020 Codex Fiscal | Sitio desarrollado por STUDIOTRES</p>
+   </div>
+
+   <script>
+      function app() {
+         return {
+            viewportHeight: null,
+            viewportHeight() {
+               viewportHeight = window.innerHeight * 0.01; 
+               document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+            }
+         }
+      }
+   </script>
+
+   <script src="dist/js/app.js"></script>
+
+</body>
+
+</html>

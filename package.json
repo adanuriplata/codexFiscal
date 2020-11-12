@@ -60,6 +60,7 @@
         "alpinejs/dist/alpine.js"
     ],
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.1",
         "alpinejs": "^2.3.5",
         "fg-loadcss": "^2.1.0",
         "tailwindcss": "^1.4.6",
@@ -101,11 +102,11 @@
         "type": "git",
         "url": "git+https://github.com/madebyshape/tailwind-css.git"
     },
-    "author": "Jason Mayo (@bymayo)",
-    "authorUrl": "https://madebyshape.co.uk",
+    "author": "Adan Plata (@fuzzjs)",
+    "authorUrl": "https://fuzzjs.com",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/madebyshape/tailwind-css/issues"
+        "url": "https://github.com/adanuriplata"
     },
-    "homepage": "https://github.com/madebyshape/tailwind-css#readme"
+    "homepage": "https://github.com/adanuriplata/codexFiscal"
 }
