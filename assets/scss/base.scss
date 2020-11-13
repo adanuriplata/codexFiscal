@@ -181,6 +181,88 @@ p {
    color: #004E8F;
 }
 
+.service-box{
+   padding: 60px 25px;
+    z-index: 1;
+    position: relative;
+    -webkit-transition: 1s;
+    transition: .5s;
+    color: #111111;
+    overflow: hidden;
+   //  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.085);
+}
+
+.service-box:focus-within, .service-box:hover {
+   background-color: rgba(0,0,0,0.2);
+  background-image:url(/dist/images/service02.jpg);
+  filter:brightness(0.8);
+   color: #fff;
+   // box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.10);
+}
+
+.service-box-2:focus-within, .service-box-2:hover {
+   background-color: rgba(0,0,0,0.2);
+  background-image:url(/dist/images/service003.jpg);
+  filter:brightness(0.8);
+   color: #fff;
+}
+
+.service-box-3:focus-within, .service-box-3:hover {
+   background-color: rgba(0,0,0,0.2);
+  background-image:url(/dist/images/service003.jpg);
+  filter:brightness(0.8);
+   color: #fff;
+}
+
+.service-box:focus-within:before, .service-box:hover:before {
+   left: 0;
+   transition: 300ms;
+   transition-delay: 250ms;
+}
+
+.service-box:after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   background: #000;
+   position: absolute;
+   top: 0;
+   opacity: 0;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   visibility: hidden;
+   left: 0;
+   z-index: -1;
+   -webkit-transition: .8s;
+   transition: .8s;
+   -webkit-transform: scale(.9);
+   transform: scale(.9);
+}
+
+.service-box:focus-within:after, .service-box:hover:after {
+   opacity: .75;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+   visibility: visible;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes rotateme {
    from {
