@@ -1,3 +1,6 @@
+
+# Sitio estatico hecho con html css js con framework tailwind y alpinejs por medio del boilerplate que se describe abajo.
+
 # Tailwind CSS
 
 This is a boilerplate [MadeByShape](https://madebyshape.co.uk) use internally for projects.
